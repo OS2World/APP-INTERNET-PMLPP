@@ -1,0 +1,11 @@
+Upload Information Template for Hobbes.nmsu.edu
+===============================================
+Archive Name:  pmlpp220.zip
+Archive Description:  A tiny POP mail checker for PM, v2.10 - APOP capability and source code.
+Operating System/Version:  OS/2 Warp 3.x or greater
+Program Source:  Author
+Replaces:  pmlpp210.zip
+Your name:  Jim Louvau
+Your email address:  jim@vwm.com
+Proposed directory
+for placement:  /pub/os2/apps/internet/mail/util

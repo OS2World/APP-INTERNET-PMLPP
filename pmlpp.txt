@@ -1,0 +1,11 @@
+                           Upload Information Template for Hobbes.nmsu.edu
+                           ===============================================
+            Archive Name:  pmlpp.zip
+     Archive Description:  A tiny pop mail checker for PM - Copyleft w/source - V1.00
+Operating System/Version:  Warp (OS/2 3.0+)
+          Program Source:  Author
+                Replaces:  N/A
+               Your name:  Jim Louvau
+      Your email address:  jim@vwm.com
+      Proposed directory
+           for placement:  /pub/os2/apps/internet/mail/util

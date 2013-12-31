@@ -1,0 +1,26 @@
+pmlpp.exe : pmlpp.obj profile.obj pop.obj md5.obj pmlpp.res pmlpp.hlp .AUTODEPEND
+;  wlink sys os2v2 pm name pmlpp fil pmlpp.obj,profile.obj,pop.obj,md5.obj libr so32dll.lib,tcp32dll.lib op st=32768 op c op maxe=25 op q op el op int
+  wlink @pmlpp.wlk
+  rc pmlpp.res pmlpp.exe
+
+md5.obj : md5.c md5.h .AUTODEPEND
+  wcc386 -w4 -e25 -zp8 -zq -otexan -bm -5r -bt=os2 -mf -oh -ei -fp3 -fpi87 md5.c
+
+pop.obj : pop.c pmlpp.h controls.h md5.h .AUTODEPEND
+  wcc386 -w4 -e25 -zp8 -zq -otexan -bm -5r -bt=os2 -mf -oh -ei -fp3 -fpi87 pop.c
+
+pmlpp.obj : pmlpp.c pmlpp.h controls.h .AUTODEPEND
+  wcc386 -w4 -e25 -zp8 -zq -otexan -bm -5r -bt=os2 -mf -oh -ei -fp3 -fpi87 pmlpp.c
+
+profile.obj : profile.c pmlpp.h controls.h .AUTODEPEND
+  wcc386 -w4 -e25 -zp8 -zq -otexan -bm -5r -bt=os2 -mf -oh -ei -fp3 -fpi87 profile.c
+
+pmlpp.res : pmlpp.rc controls.h .AUTODEPEND
+ rc -n -r pmlpp.rc pmlpp.res
+
+pmlpp.hlp : pmlpp.ipf
+ ipfc pmlpp.ipf pmlpp.hlp
+
+
+
+
